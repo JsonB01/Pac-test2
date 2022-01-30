@@ -1,0 +1,538 @@
+/*===============TOOLS===============*/
+    /*  
+        .25rem = 4px
+        .5rem = 8px
+        .75rem = 12px
+        1rem = 16px
+        1.5rem = 24px
+        2rem = 32px
+    */
+
+/*===============VARIABLES===============*/
+:root{
+    /*===Heights=====*/
+    --header-height: 3rem;
+
+    /*===Font-size=====*/
+    --big-header-size: 3rem;
+    --second-header-size: 3rem;
+    --text-size: 3rem;
+    --header-link-size: 3rem;
+    --icon-media-size: 3rem;
+    --icon-nav-size: 3rem;
+
+    /*===Font-family===*/
+    --logo-font: ;
+    --big-header-font: ;
+    --second-header-font: ;
+    --text-font: sans ms;
+    --header-link-font: ;
+
+    /*===Color===*/
+    --hue: ;
+    --hue-second: ;
+    --hue-third: ;
+    --big-header-color: ;
+    --second-header-color: ;
+    --text-color: ;
+    --header-link-color: ;
+    --icon-media-color: ;
+    --icon-nav-color: ;
+    --body-main-color: ;
+    --body-second-color: ;
+    --body-third-color: ;
+
+    /*===Border===*/
+    --border-small: 10px solid #000;
+    --border-medium: 5px solid #000;
+    --border-big: 2px solid #000;
+
+    /*===Border-radius===*/
+    --border-radius-small: 10px;
+    --border-radius-medium: 5px;
+    --border-radius-big: 2px;
+}
+
+/*===============BASIC CODE start===============*/
+*{
+margin: 0;
+padding: 0;
+}
+body{
+    font-family: comic sans ms;
+}
+h2{
+    color: pink;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+/*===============BASIC CODE end===============*/
+
+
+/*===============BOBY start===============*/
+
+
+/*===============BODY end===============*/
+
+/*===============HEAEDER start===============*/
+header{
+    position: relative;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    background: url(jason-leung-Xaanw0s0pMk-unsplash.jpg);
+    background-position: cover;
+    background-size: 500px;
+    z-index: 111;
+    font-family: 'JMH-Cthulhumbus';
+}
+header img{
+    width: 10rem;
+}
+
+.custom-shape-divider-bottom-1642303788 {
+    position: absolute;
+    bottom: -2vh;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1642303788 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 268px;
+}
+
+.custom-shape-divider-bottom-1642303788 .shape-fill {
+    fill: #e45932;
+}
+
+/*===============HEADER end===============*/
+
+/*===============LANDING start===============*/
+.page1{
+    position: relative;
+    height: auto;
+    background: linear-gradient(#e45932, #f3a93e);
+    top: 0;
+    z-index: 1;
+}
+.page1 .grille{
+    position: relative;
+    width: 90%;
+    margin-left: 5%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20vh;
+}
+.page1 .grille .column{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+    align-items: center;
+}
+.grille .column .box{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    margin: auto;
+    border-radius: 3px;
+    
+}
+.page1 .column .box1 {
+    background-image: url(1.jpg);
+    background-size: 300px;
+    background-position: cover;
+    animation-name: box1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+.page1 .column .box2 {
+    background-image: url(2.jpg);
+    background-size: 300px;
+    background-position: cover;
+    animation-name: box2;
+    animation-duration: 23s;
+    animation-iteration-count: infinite;
+}
+.page1 .column .box3 {
+    background-image: url(6.jpg);
+    background-size: 300px;
+    background-position: cover;
+    animation-name: box3;
+    animation-duration: 26s;
+    animation-iteration-count: infinite;
+}
+.page1 .column .box4 {
+    background-image: url(4.jpg);
+    background-size: 300px;
+    background-position: cover;
+    animation-name: box4;
+    animation-duration: 29s;
+    animation-iteration-count: infinite;
+}
+.page1 .column .box5 {
+    background-image: url(T1.jpg);
+    background-size: 300px;
+    background-position: cover;
+    animation-name: box5;
+    animation-duration: 32s;
+    animation-iteration-count: infinite;
+}
+.page1 .column .box6 {
+    background-image: url(F.jpg);
+    background-size: 300px;
+    background-position: cover;
+    animation-name: box6;
+    animation-duration: 35s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes box1{
+    20%{
+        background-image: url(3.jpg);
+        background-size: 300px;
+        background-position: cover;
+    }
+    40%{
+        background-image: url(6.jpg);
+        background-size: 300px;
+        background-position: cover;
+    }
+    60%{
+        background-image: url(T1.jpg);
+        background-size: 300px;
+        background-position: cover;
+    }
+    80%{
+        background-image: url(A.jpg);
+        background-size: 300px;
+        background-position: cover;
+    }
+    100%{
+        background-image: url(5.jpg);
+        background-size: 300px;
+        background-position: cover;
+    }
+}
+
+@keyframes box2{
+    20%{
+        background-image: url(T2.jpg);
+        background-size: 300px;
+        background-position: cover;
+    }
+    40%{
+        background-image: url(4.jpg);
+        background-size: 300px;
+        background-position: cover;
+    }
+    60%{
+        background-image: url(B.jpg);
+        background-size: 300px;
+        background-position: cover;
+    }
+    80%{
+        background-image: url(T1.jpg);
+        background-size: 300px;
+        background-position: cover;
+    }
+    100%{
+        background-image: url(3.jpg);
+        background-size: 300px;
+        background-position: cover;
+    }
+}
+
+@keyframes box3{
+    0%{
+        background-image: url(6.jpg);
+        background-size: 300px;
+        background-position: cover;
+    }
+    20%{
+        background-image: url(T1.jpg);
+        background-size: 300px;
+        background-position: cover;
+    }
+    40%{
+        background-image: url(C.jpg);
+        background-size: 300px;
+        background-position: cover;
+    }
+    60%{
+        background-image: url(T3.jpg);
+        background-size: 300px;
+        background-position: cover;
+    }
+    80%{
+        background-image: url(4.jpg);
+        background-size: 300px;
+        background-position: cover;
+    }
+    100%{
+        background-image: url(6.jpg);
+        background-size: 300px;
+        background-position: cover;
+    }
+}
+
+@keyframes box4{
+    0%{
+        background-image: url(4.jpg);
+        background-size: 300px;
+        background-position: cover;
+    }
+    20%{
+        background-image: url(D.jpg);
+        background-size: 300px;
+        background-position: cover;
+    }
+    40%{
+        background-image: url(T2.jpg);
+        background-size: 300px;
+        background-position: cover;
+    }
+    60%{
+        background-image: url(2.jpg);
+        background-size: 300px;
+        background-position: cover;
+    }
+    80%{
+        background-image: url(1.jpg);
+        background-size: 300px;
+        background-position: cover;
+    }
+    100%{
+        background-image: url(4.jpg);
+        background-size: 300px;
+        background-position: cover;
+    }
+}
+
+@keyframes box5{
+    0%{
+        background-image: url(T1.jpg);
+        background-size: 300px;
+        background-position: cover;
+    }
+    20%{
+        background-image: url(5.jpg);
+        background-size: 300px;
+        background-position: cover;
+    }
+    40%{
+        background-image: url(3.jpg);
+        background-size: 300px;
+        background-position: cover;
+    }
+    60%{
+        background-image: url(4.jpg);
+        background-size: 300px;
+        background-position: cover;
+    }
+    80%{
+        background-image: url(5.jpg);
+        background-size: 300px;
+        background-position: cover;
+    }
+    100%{
+        background-image: url(E.jpg);
+        background-size: 300px;
+        background-position: cover;
+    }
+}
+
+@keyframes box6{
+    0%{
+        background-image: url(F.jpg);
+        background-size: 200px;
+        background-position: cover;
+    }
+    20%{
+        background-image: url(6.jpg);
+        background-size: 200px;
+        background-position: cover;
+    }
+    40%{
+        background-image: url(5.jpg);
+        background-size: 200px;
+        background-position: cover;
+    }
+    60%{
+        background-image: url(5.jpg);
+        background-size: 200px;
+        background-position: cover;
+    }
+    80%{
+        background-image: url(3.jpg);
+        background-size: 200px;
+        background-position: cover;
+    }
+    100%{
+        background-image: url(T3.jpg);
+        background-size: 200px;
+        background-position: cover;
+    }
+}
+
+.page1_2{
+    padding-top: 5vh;
+    height: auto;
+    width: 100%;
+    padding-bottom: 10vh;
+}
+.page1_2 h2{
+    font-size: 2.5rem;
+    text-align: center;
+    cursor: default;
+    margin: 2rem 0;
+}
+.page1_2 ul{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+.page1_2 ul li{
+    display: flex;
+    flex-direction: row;
+    line-height: 7rem;
+    justify-content: space-around;
+    font-size: 1.2rem;
+}
+.page1_2 ul li span .textP{
+    line-height: 20px;
+    margin-top: 3.5rem;
+}
+.page1_2 ul li .rounder{
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    border-radius: 100%;
+    margin-top: 3.5rem;
+    position: absolute;
+    transform: translate(-215%);
+}
+.page1_2 ul li .line{
+    width: 1px;
+    transform: translate(100%);
+    background-color: red;
+}
+
+
+
+.page1_3{
+    padding-top: 5vh;
+    height: auto;
+    width: 100%;
+    padding-bottom: 10vh;
+}
+.page1_3 h2{
+    font-size: 2.5rem;
+    text-align: center;
+    cursor: default;
+    margin: 2rem 0;
+}
+.page1_3 form{
+    width: 70%;
+    margin: auto;
+    line-height: 3.9rem;
+}
+.page1_3 form input{
+    width: 100%;
+    height: 2rem;
+    border-radius: 4px;
+    border: none;
+    padding: 0px 15px;
+    text-transform: capitalize;
+    background-color: hsl(35, 88%, 70%);
+}
+.page1_3 form input:placeholder-shown{
+    padding: 0px 15px
+}
+.page1_3 .contact{
+    margin-top: 10vh;
+    margin-left: 15%;
+}
+.page1_3 .contact ul{
+    list-style-type: none;
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+.page1_3 .contact ul li{
+    cursor: pointer;
+}
+
+
+
+
+.page1_4{
+    padding-top: 5vh;
+    height: auto;
+    width: 100%;
+    padding-bottom: 10vh;
+}
+.page1_4 h2{
+    font-size: 2.5rem;
+    text-align: center;
+    cursor: default;
+    margin: 2rem 0;
+}
+.page1_4 ul{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+.page1_4 ul li{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.page1_4 ul li:not(:last-child){
+    margin-bottom: 3rem;
+}
+.page1_4 ul li img{
+    height: 100px;
+    width: 100px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+.page1_4 ul li .text_info{
+    margin-left: 5%;
+    font-size: 1.2rem;
+}
+.page1_4 ul li .text_info ol{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.page1_4 ul li .text_info ol li i{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/*===============LANDING end===============*/
+
+/*===============FOOTER sart===============*/
+
+
+/*===============FOOTER end===============*/
