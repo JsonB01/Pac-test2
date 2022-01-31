@@ -62,8 +62,17 @@ body{
     font-family: comic sans ms;
 }
 h2{
-    color: pink;
+    color: #fff;
     font-family: 'Chakra Petch', sans-serif;
+}
+h5{
+    color: hsl(350, 50%, 88%);
+    font-size: 1.5rem;
+    margin: 10% auto;
+    width: 80%;
+    font-family: 'Quintessential', cursive;
+    letter-spacing: 2px;
+    word-spacing: 5px;
 }
 
 /*===============BASIC CODE end===============*/
@@ -123,280 +132,117 @@ header img{
     top: 0;
     z-index: 1;
 }
-.page1 .grille{
-    position: relative;
-    width: 90%;
-    margin-left: 5%;
+.page1_1{
+    padding-top: 10vh;
+    width: 100%;
     height: 100vh;
-    display: flex;
-    flex-direction: row;
-    padding-top: 20vh;
+    position: relative;
+    padding-bottom: 7rem;
 }
-.page1 .grille .column{
-    width: 50%;
-    height: auto;
+.page1_1 h3{
+    font-size: 2.5rem;
+    color: #fff;
+}
+.page1_1 .grille{
     display: flex;
     flex-direction: column;
-    grid-gap: 20px;
-    align-items: center;
-}
-.grille .column .box{
-    position: relative;
-    height: 200px;
-    width: 200px;
-    background-color: black;
+    width: 80%;
     margin: auto;
+    grid-gap: 10px;
+}
+.page1_1 .grille .block{
+    width: 100%;
+    height: 200px;
+    background-color: black;
     border-radius: 3px;
-    
 }
-.page1 .column .box1 {
-    background-image: url(1.jpg);
-    background-size: 300px;
-    background-position: cover;
-    animation-name: box1;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
+.block1{
+    animation: block1 20s 0s infinite ease-in-out;
+    transition: .1s;
+    background-position: center;
+    background-size: cover;
 }
-.page1 .column .box2 {
-    background-image: url(2.jpg);
-    background-size: 300px;
-    background-position: cover;
-    animation-name: box2;
-    animation-duration: 23s;
-    animation-iteration-count: infinite;
+.block2{
+    animation: block2 20s 0s infinite ease-in-out;
+    transition: .1s;
+    background-position: center;
+    background-size: cover;
 }
-.page1 .column .box3 {
-    background-image: url(6.jpg);
-    background-size: 300px;
-    background-position: cover;
-    animation-name: box3;
-    animation-duration: 26s;
-    animation-iteration-count: infinite;
-}
-.page1 .column .box4 {
-    background-image: url(4.jpg);
-    background-size: 300px;
-    background-position: cover;
-    animation-name: box4;
-    animation-duration: 29s;
-    animation-iteration-count: infinite;
-}
-.page1 .column .box5 {
-    background-image: url(T1.jpg);
-    background-size: 300px;
-    background-position: cover;
-    animation-name: box5;
-    animation-duration: 32s;
-    animation-iteration-count: infinite;
-}
-.page1 .column .box6 {
-    background-image: url(F.jpg);
-    background-size: 300px;
-    background-position: cover;
-    animation-name: box6;
-    animation-duration: 35s;
-    animation-iteration-count: infinite;
+.block3{
+    animation: block3 20s 0s infinite ease-in-out;
+    transition: .1s;
+    background-position: center;
+    background-size: cover;
 }
 
-@keyframes box1{
-    20%{
-        background-image: url(3.jpg);
-        background-size: 300px;
-        background-position: cover;
-    }
-    40%{
-        background-image: url(6.jpg);
-        background-size: 300px;
-        background-position: cover;
-    }
-    60%{
-        background-image: url(T1.jpg);
-        background-size: 300px;
-        background-position: cover;
-    }
-    80%{
-        background-image: url(A.jpg);
-        background-size: 300px;
-        background-position: cover;
-    }
-    100%{
-        background-image: url(5.jpg);
-        background-size: 300px;
-        background-position: cover;
-    }
-}
 
-@keyframes box2{
-    20%{
-        background-image: url(T2.jpg);
-        background-size: 300px;
-        background-position: cover;
-    }
-    40%{
-        background-image: url(4.jpg);
-        background-size: 300px;
-        background-position: cover;
-    }
-    60%{
-        background-image: url(B.jpg);
-        background-size: 300px;
-        background-position: cover;
-    }
-    80%{
-        background-image: url(T1.jpg);
-        background-size: 300px;
-        background-position: cover;
-    }
-    100%{
-        background-image: url(3.jpg);
-        background-size: 300px;
-        background-position: cover;
-    }
-}
-
-@keyframes box3{
+@keyframes block1 {
     0%{
-        background-image: url(6.jpg);
-        background-size: 300px;
-        background-position: cover;
+        background: url(1.jpg);
+        background-size: cover;
     }
-    20%{
-        background-image: url(T1.jpg);
-        background-size: 300px;
-        background-position: cover;
-    }
-    40%{
-        background-image: url(C.jpg);
-        background-size: 300px;
-        background-position: cover;
-    }
-    60%{
-        background-image: url(T3.jpg);
-        background-size: 300px;
-        background-position: cover;
-    }
-    80%{
-        background-image: url(4.jpg);
-        background-size: 300px;
-        background-position: cover;
+    50%{
+        background: url(B.jpg);
+        background-size: cover;
     }
     100%{
-        background-image: url(6.jpg);
-        background-size: 300px;
-        background-position: cover;
+        background: url(3.jpg);
+        background-size: cover;
+    }
+}
+@keyframes block2 {
+    0%{
+        background: url(F.jpg);
+        background-size: cover;
+    }
+    50%{
+        background: url(C.jpg);
+        background-size: cover;
+    }
+    100%{
+        background: url(5.jpg);
+        background-size: cover;
+    }
+}
+@keyframes block3 {
+    0%{
+        background: url(E.jpg);
+        background-size: cover;
+    }
+    50%{
+        background: url(D.jpg);
+        background-size: cover;
+    }
+    100%{
+        background: url(4.jpg);
+        background-size: cover;
     }
 }
 
-@keyframes box4{
-    0%{
-        background-image: url(4.jpg);
-        background-size: 300px;
-        background-position: cover;
-    }
-    20%{
-        background-image: url(D.jpg);
-        background-size: 300px;
-        background-position: cover;
-    }
-    40%{
-        background-image: url(T2.jpg);
-        background-size: 300px;
-        background-position: cover;
-    }
-    60%{
-        background-image: url(2.jpg);
-        background-size: 300px;
-        background-position: cover;
-    }
-    80%{
-        background-image: url(1.jpg);
-        background-size: 300px;
-        background-position: cover;
-    }
-    100%{
-        background-image: url(4.jpg);
-        background-size: 300px;
-        background-position: cover;
-    }
-}
 
-@keyframes box5{
-    0%{
-        background-image: url(T1.jpg);
-        background-size: 300px;
-        background-position: cover;
-    }
-    20%{
-        background-image: url(5.jpg);
-        background-size: 300px;
-        background-position: cover;
-    }
-    40%{
-        background-image: url(3.jpg);
-        background-size: 300px;
-        background-position: cover;
-    }
-    60%{
-        background-image: url(4.jpg);
-        background-size: 300px;
-        background-position: cover;
-    }
-    80%{
-        background-image: url(5.jpg);
-        background-size: 300px;
-        background-position: cover;
-    }
-    100%{
-        background-image: url(E.jpg);
-        background-size: 300px;
-        background-position: cover;
-    }
-}
-
-@keyframes box6{
-    0%{
-        background-image: url(F.jpg);
-        background-size: 200px;
-        background-position: cover;
-    }
-    20%{
-        background-image: url(6.jpg);
-        background-size: 200px;
-        background-position: cover;
-    }
-    40%{
-        background-image: url(5.jpg);
-        background-size: 200px;
-        background-position: cover;
-    }
-    60%{
-        background-image: url(5.jpg);
-        background-size: 200px;
-        background-position: cover;
-    }
-    80%{
-        background-image: url(3.jpg);
-        background-size: 200px;
-        background-position: cover;
-    }
-    100%{
-        background-image: url(T3.jpg);
-        background-size: 200px;
-        background-position: cover;
-    }
-}
 
 .page1_2{
     padding-top: 5vh;
     height: auto;
     width: 100%;
     padding-bottom: 10vh;
+    margin-top: 40%;
 }
 .page1_2 h2{
     font-size: 2.5rem;
     text-align: center;
     cursor: default;
     margin: 2rem 0;
+}
+.page1_2 .mini_text{
+    font: 1.35rem;
+    width: 80%;
+    margin: 10%;
+    text-align: center;
+    color: hsl(350, 50%, 88%);
+    font-family: 'Quintessential', cursive;
+    letter-spacing: 2px;
+    word-spacing: 5px;
 }
 .page1_2 ul{
     display: flex;
@@ -405,30 +251,48 @@ header img{
     margin: auto;
 }
 .page1_2 ul li{
+    position: relative;
     display: flex;
     flex-direction: row;
-    line-height: 7rem;
     justify-content: space-around;
     font-size: 1.2rem;
+    padding: 0px 10%;
+    overflow: hidden;
 }
-.page1_2 ul li span .textP{
-    line-height: 20px;
-    margin-top: 3.5rem;
+.page1_2 ul li:not(:last-child){
+    padding-bottom: 3rem;
+}
+.page1_2 .plan{
+    width: 40%;
+}
+.page1_2 ul li .rond{
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 .page1_2 ul li .rounder{
     height: 10px;
     width: 10px;
     background-color: red;
     border-radius: 100%;
-    margin-top: 3.5rem;
+    margin-top: .5rem;
     position: absolute;
-    transform: translate(-215%);
+    align-items: center;
 }
 .page1_2 ul li .line{
     width: 1px;
-    transform: translate(100%);
+    height: 200%;
     background-color: red;
+    position: absolute;
+    margin-left: .5px;
+    margin-bottom: 100px;
 }
+.page1_2 ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 
 
 
@@ -460,6 +324,10 @@ header img{
 }
 .page1_3 form input:placeholder-shown{
     padding: 0px 15px
+}
+.page1_3 .submit_btn{
+    width: 30%;
+    margin: auto;
 }
 .page1_3 .contact{
     margin-top: 10vh;
@@ -527,6 +395,21 @@ header img{
     text-decoration: none;
     color: #fff;
     cursor: pointer;
+}
+.download{
+    padding: 10px 25px;
+    border-radius: 4px;
+    background-color: hsl(35, 88%, 70%);
+    cursor: pointer;
+    position: absolute;
+    margin-left: 10%;
+}
+.download a{
+    color: #000;
+    text-decoration: none;
+}
+.download:hover{
+    background-color: hsl(35, 88%, 50%);
 }
 
 
